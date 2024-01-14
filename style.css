@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: url(images/header.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff6f4;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff6f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.text-box h1{
+    font-size: 50px;
+    color:#0ab42f;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff6f4;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff6f4;
+    border: 1px solid #0ab42f;
+    padding: 12px 34px;
+    margin-left: 50px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #0ab42f;
+    background: #0ab42f;
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+/*Course*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background:#03b412;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff6f4;
+}
+.course-col p{
+    color: #fff6f4;
+}
+
+/*FAQ*/
+
+.question{
+    margin: 50px;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/body.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    margin-left: 0;
+}
+.question h1{
+    color: #fff6f4;
+}
+.question p{
+    margin-bottom: 20px;
+    color:#fff6f4;
+}
+
+
+/*Dameano*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    font-size: 15px;
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*Contacts*/
+.cta{
+    margin: 100px;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/body.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+.cta h1{
+    color: #fff6f4;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #03b412;
+    }
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/*About Page*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/121.jpg);;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff6f4;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.history{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.history-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.history-col img{
+    width: 100%;
+}
+.history-col h1{
+    padding-top: 0%;
+}
+.history-col p{
+    padding: 15px 0;
+}
+
+.redhero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff6f4;
+    border: 1px solid #fff6f4;
+    padding: 12px 34px;
+    margin-left: 50px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.redhero-btn:hover{
+    border: 1px solid #03b412;
+    background: #03b412;
+    transition: 0.5s;
+}
+
+
+.redhero-btn{
+    border: 1px solid #03b412;
+    background: transparent;
+    color: #03b412;
+}
+.red-btn:hover{
+    color: #fff6f4;
+}
+
+.blank{
+    width: 100%;
+    background-color: #03b412;
+    text-align: center;
+}
+
+/*Seal*/
+
+.Seal{
+    height: 90vh;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-image: url(images/seal-back.png);
+    background-position: center;
+    background-size: cover;
+}
+.seal{
+    width: 90%;
+    color: #fff6f4;
+    position: absolute;
+    margin-top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.seal h1{
+    font-size: 30px;
+    color: #fff6f4;
+}
+.seal p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff6f4;
+}
+
+
+
+/*Faculty*/
+
+.faculty{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.faculty-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-top:0;
+}
+.faculty-col img{
+    width: 100%;
+}
+.faculty-col p{
+    padding: 0;
+    text-align: center;
+}
+.faculty-col h3{
+    margin-top: 16px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: black;
+}
+.row{
+    margin-top: 20px;
+}
+
+/*Contact*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa-solid{
+    font-size: 28px;
+    color: #03b412;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #bebebe;
+box-sizing: border-box;
+}
+
+/*Error*/
+
+.error{
+    height: 90vh;
+    width: 100%;
+    margin-top: 0;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+.error-con{
+    width: 90%;
+    position: absolute;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.error-con h1{
+    font-size: 100px;
+    color: black;
+}
+.error-con p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: black;
+}
+
+/*Admission*/
+
+.ads{
+    height: 50vh;
+    width: 100%;
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+}
+.ads-con{
+    width: 90%;
+    position: absolute;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.ads-con h3{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-left: 100px;
+}
+.ads-con ul{
+    margin: 10px 150px 40px;
+    font-size: 15px;
+    color: black;
+}
+
+
+/*HISTORY*/
+
+.his{
+    height: 200vh;
+    width:70%;
+    margin-top: 25%;
+    background-position: center;
+    background-size: cover;
+}
+.his-con{
+    width: 90%;
+    position: absolute;
+    margin-top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.his-con h3{
+    font-size: 20px;
+    color: #03b412;
+    text-align: center;
+    margin-left: 100px;
+}
+.his-con p{
+    font-size: 15px;
+    color:gray;
+    text-align: justify;
+    margin-left: 100px;
+}
